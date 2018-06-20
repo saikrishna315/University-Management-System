@@ -1,0 +1,1 @@
+create table exam_info(std_id number(10),sub_id number,sub_marks number,exam_name varchar(20),exam_date date,CONSTRAINT fk_exam FOREIGN KEY(std_id) REFERENCES student_info(std_id),FOREIGN KEY(sub_id) REFERENCES subject_info(sub_id)); 
